@@ -5,9 +5,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Routes from './Routes/Routes.jsx';
+// import HelmetExport from "react-helmet";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+   
     <RouterProvider router={Routes} />
+    
   </React.StrictMode>,
 )

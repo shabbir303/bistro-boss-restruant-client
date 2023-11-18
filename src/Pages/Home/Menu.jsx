@@ -29,9 +29,11 @@ const Menu = () => {
               </div>
               <h1 className="font-inter text-amber-500 ">${menuItem.price} </h1>
             </div>
+            
           </div>
         ))}
       </div>
+      <button className="flex justify-center items-center mx-auto text-center mt-7 px-[30px] py-2 rounded-xl btn  border-b-4 btn-outline border-0 text-red-700 border-slate-700 uppercase ">View full Menu</button>
     </div>
   );
 };
