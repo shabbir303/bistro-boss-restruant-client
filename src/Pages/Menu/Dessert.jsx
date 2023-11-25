@@ -1,6 +1,7 @@
 import Cover from "../Shared/Cover/Cover";
 import image from "../../assets/menu/dessert-bg.jpeg";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Dessert = () => {
   const [menu, setMenu] = useState([]);
@@ -12,7 +13,7 @@ const Dessert = () => {
         setMenu(filterData);
       });
   }, []);
-//   console.log(menu);
+  console.log(menu.category);
   return (
     <div className="max-w-7xl mx-auto">
       <Cover
@@ -40,9 +41,16 @@ const Dessert = () => {
           </div>
         ))}
       </div>
-      <button className="flex justify-center items-center mx-auto text-center mt-7 px-[30px] py-2 rounded-xl btn  border-b-4 btn-outline border-0 text-red-700 font-inter border-slate-700 uppercase ">
-        ORDER YOUR FAVOURITE FOOD
-      </button>
+     
+        
+         
+      <Link  to={`/order/dessert`}
+        className="flex justify-center items-center mx-auto text-center mt-7 px-[30px] py-2 rounded-xl btn  border-b-4 btn-outline border-0 text-red-700 font-inter max-w-[300px]  border-slate-700 uppercase ">
+         ORDER YOUR FAVOURITE FOOD
+      
+       </Link>
+      
+        
     </div>
   );
 };

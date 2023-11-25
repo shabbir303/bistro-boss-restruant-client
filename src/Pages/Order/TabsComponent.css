@@ -1,0 +1,18 @@
+.react-tabs__tab {
+    /* border: 1px solid #ccc; */
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 5px;
+  }
+  
+  .react-tabs__tab--selected {
+    border-bottom: 2px solid #BB8506;
+    color: #BB8506;
+    /* Customize the underline color and style */
+  }
+  
+  .react-tabs__tab-panel {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }

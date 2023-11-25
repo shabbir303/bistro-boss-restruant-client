@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Cover from "../Shared/Cover/Cover";
 import image from "../../assets/menu/salad-bg.jpg"
+import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Salad = () => {
     const [menu, setMenu] = useState([]);
@@ -39,9 +41,14 @@ const Salad = () => {
           </div>
         ))}
       </div>
-      <button className="flex justify-center items-center mx-auto text-center mt-7 px-[30px] py-2 rounded-xl btn  border-b-4 btn-outline border-0 text-red-700 font-inter border-slate-700 uppercase ">
-        ORDER YOUR FAVOURITE FOOD
-      </button>
+      
+        
+      <Link  to={`/order/salad`}
+        className="flex justify-center items-center mx-auto text-center mt-7 px-[30px] py-2 rounded-xl btn  border-b-4 btn-outline border-0 text-red-700 font-inter max-w-[300px]  border-slate-700 uppercase ">
+         ORDER YOUR FAVOURITE FOOD
+      
+       </Link>
+      
     </div>
     );
 };

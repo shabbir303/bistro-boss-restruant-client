@@ -1,6 +1,6 @@
 // import Dropdown from "./Dropdown";
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div className="max-w-7xl left-0 right-0 font-cinzel mx-auto fixed z-10">
@@ -67,6 +67,32 @@ const Header = () => {
             }}
           > 
               Our Menu
+          </NavLink>
+          </li>
+          <li>
+          <NavLink
+            to="/order/salad"
+            style={({ isActive }) => {
+              return {
+                fontWeight: isActive ? "bold" : "",
+                color: isActive ? "#EEFF25" : "",
+              };
+            }}
+          > 
+              Order Food
+          </NavLink>
+          </li>
+          <li>
+          <NavLink
+            to="/login"
+            style={({ isActive }) => {
+              return {
+                fontWeight: isActive ? "bold" : "",
+                color: isActive ? "#EEFF25" : "",
+              };
+            }}
+          > 
+              Login
           </NavLink>
           </li>
         </ul>

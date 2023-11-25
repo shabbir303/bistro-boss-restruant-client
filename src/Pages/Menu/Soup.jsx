@@ -2,6 +2,7 @@
 import Cover from "../Shared/Cover/Cover";
 import image from "../../assets/menu/soup-bg.jpg";
 import UseMenu from "../../Hooks/UseMenu";
+import { Link } from "react-router-dom";
 
 const Soup = () => {
   //     const [menu, setMenu] = useState([]);
@@ -42,9 +43,14 @@ const Soup = () => {
           </div>
         ))}
       </div>
-      <button className="flex justify-center items-center mx-auto text-center mt-7 px-[30px] py-2 rounded-xl btn  border-b-4 btn-outline border-0 text-red-700 font-inter border-slate-700 uppercase ">
-        ORDER YOUR FAVOURITE FOOD
-      </button>
+      
+       
+      <Link  to={`/order/soup`}
+        className="flex justify-center items-center mx-auto text-center mt-7 px-[30px] py-2 rounded-xl btn  border-b-4 btn-outline border-0 text-red-700 font-inter max-w-[300px]  border-slate-700 uppercase ">
+         ORDER YOUR FAVOURITE FOOD
+      
+       </Link>
+     
     </div>
   );
 };
